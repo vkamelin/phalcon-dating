@@ -1,0 +1,25 @@
+.infinite-scroll-preloader {
+  margin-top:-20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.infinite-scroll-preloader .preloader {
+  width:34px;
+  height:34px;
+}  
+.navbar {
+  border-bottom: none;
+  background: #2196f3;
+  color: #ffffff;
+}
+.navbar a.link {
+  color: #ffffff;
+}
+.panel, .left-menu .list-button {
+  background-color: #3f4041;
+}
+
+.left-menu .item-link.list-button {
+  text-align: left;
+}
+

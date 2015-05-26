@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <title>My App</title>
+        <link id="pagestyle" rel="stylesheet" href="lib/framework7.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+        <!-- Status bar overlay for full screen mode (PhoneGap) -->
+        <div class="statusbar-overlay"></div>
+        <!-- Panels overlay-->
+        <div class="panel-overlay"></div>
+
+        <div class="panel panel-left panel-reveal">
+	        <div class="content-block-title color-green">Left Menu</div>
+	        <div class="list-block left-menu">
+	            <ul>
+                    <li><a href="#" class="item-link list-button color-white">Menu 1</a></li>
+	                <li><a href="#" class="item-link list-button color-white">Menu 2</a></li>
+	                <li><a href="#" class="item-link list-button color-white">Menu 3</a></li>
+                </ul>
+            </div>
+            <div class="row theme-white" style="width:90%;margin-left: auto;margin-right: auto;">
+                <div class="col-50">
+                    <a href="#" class="button changestyle" rel="lib/framework7.css">iOS style</a>
+                </div>
+                <div class="col-50">
+                    <a href="#" class="button changestyle" rel="lib/framework7.material.css">Android style</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="views">
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+
+            <!-- Top Navbar-->
+            <div class="navbar theme-white">
+                <div class="navbar-inner">
+                    <div class="left">
+                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                    </div>
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center sliding">First App</div>
+                </div>
+            </div>
+
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content pull-to-refresh-content infinite-scroll" data-distance="100">
+                        <div class="pull-to-refresh-layer">
+                            <div class="preloader"></div>
+                            <div class="pull-to-refresh-arrow"></div>
+                        </div>
+                        <p style="margin-left:5px;">Pull to refresh and add 8000 items</p>
+                        <div class="list-block virtual-list media-list"></div>
+                            <div class="infinite-scroll-preloader">
+                                <div class="preloader"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toolbar">
+                    <div class="toolbar-inner">
+                        <!-- Toolbar links -->
+                        <a href="#" class="link">Link 1</a>
+                        <a href="#" class="link">Link 2</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="lib/framework7.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>            
